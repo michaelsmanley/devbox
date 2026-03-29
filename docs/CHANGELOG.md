@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.0.13] - 2026-03-29
+
+- e8a6f5a fix: add check for new commits before releasing
+
+
 ## [0.0.12] - 2026-03-29
 
 - 8cbc2a9 fix: dry run should work now
@@ -59,6 +64,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Version is now stored in a `VERSION` file instead of `README.md`.
 
 ---
+
+## [0.0.13] - 2026-03-29
+
+- e8a6f5a fix: add check for new commits before releasing
+
 
 ## [0.0.12] - 2026-03-29
 
