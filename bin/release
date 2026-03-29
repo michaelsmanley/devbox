@@ -114,6 +114,10 @@ git add VERSION "$CHANGELOG_FILE"
 git commit -m "chore(release): $NEW_TAG"
 git tag -a "$NEW_TAG" -m "Version $NEW_TAG"
 
+echo ""
+echo "Successfully created release $NEW_TAG locally."
+echo ""
+
 if [ "$PUSH_CHANGES" = true ]; then
   echo "Pushing release $NEW_TAG to remote..."
   git push && git push --tags
