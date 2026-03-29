@@ -106,9 +106,11 @@ fi
 echo "Releasing version $NEW_TAG..."
 echo "$NEW_VERSION" > VERSION
 
-# Insert the new entry after the '---' line
-sed -i "/---/a\\
-$CHANGELOG_ENTRY" "$CHANGELOG_FILE"
+# Insert the new entry after the '---' line in a portable way
+TMP_CHANGELOG=$(mktemp)
+sed "/---/a\\
+$CHANGELOG_ENTRY" "$CHANGELOG_FILE" > "$TMP_CHANGELOG"
+mv "$TMP_CHANGELOG" "$CHANGELOG_FILE"
 
 git add VERSION "$CHANGELOG_FILE"
 git commit -m "chore(release): $NEW_TAG"
