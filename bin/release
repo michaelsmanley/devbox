@@ -103,6 +103,3 @@ else
   echo "To publish, run:"
   echo "  git push && git push --tags"
 fi
-s created locally."
-echo "To publish, run:"
-echo "  git push && git push --tags"
