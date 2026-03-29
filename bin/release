@@ -18,6 +18,24 @@ set -o pipefail
 
 cd "$(dirname "$0")/.." # Run from project root
 
+DRY_RUN=false
+PUSH_CHANGES=false
+while getopts "dp" opt; do
+  case $opt in
+    d)
+      DRY_RUN=true
+      ;;
+    p)
+      PUSH_CHANGES=true
+      ;;
+    \?)
+      echo "Invalid option: -$OPTARG" >&2
+      exit 1
+      ;;
+  esac
+done
+shift $((OPTIND-1))
+
 if ! git diff --quiet; then
   echo "Git working directory is not clean. Please commit or stash your changes."
   exit 1
@@ -76,7 +94,15 @@ git add VERSION "$CHANGELOG_FILE"
 git commit -m "chore(release): $NEW_TAG"
 git tag -a "$NEW_TAG" -m "Version $NEW_TAG"
 
-echo ""
-echo "Release $NEW_TAG is created locally."
+if [ "$PUSH_CHANGES" = true ]; then
+  echo "Pushing release $NEW_TAG to remote..."
+  git push && git push --tags
+else
+  echo ""
+  echo "Release $NEW_TAG is created locally."
+  echo "To publish, run:"
+  echo "  git push && git push --tags"
+fi
+s created locally."
 echo "To publish, run:"
 echo "  git push && git push --tags"
