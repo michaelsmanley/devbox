@@ -1,7 +1,13 @@
-# devbox.computer
+# MSM.dev/devbox
 
-This holds the https://devbox.computer website source code, which is the site for the book "Sustainable Dev Environments with
-Docker and Bash".
+Forked from [davetron5000/devbox](https://github.com/davetron5000/devbox).
 
-There is also code here to create such an environment, though it is not 100% consistent with the book.  The code here is a work
-in progress, intended to allow piecing together a dev environment more easily.
+This repo contains the bash scripts and Dockerfile templates for creating a development environment project for MSM.dev uses.
+
+## How to Use
+
+1. Clone or check out the repo locally.
+2. Run `bin/install -h` to read the installation help.
+3. Gather all of the details for your project:
+    1. 
+
