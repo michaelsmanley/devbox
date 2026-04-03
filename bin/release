@@ -111,6 +111,7 @@ sed "/---/a\\
 $CHANGELOG_ENTRY" "$CHANGELOG_FILE" > "$TMP_CHANGELOG"
 mv "$TMP_CHANGELOG" "$CHANGELOG_FILE"
 git add "$CHANGELOG_FILE"
+git commit -m "Update CHANGELOG for version $NEW_TAG"
 
 git tag -a "$NEW_TAG" -m "Version $NEW_TAG"
 
