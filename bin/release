@@ -112,8 +112,6 @@ $CHANGELOG_ENTRY" "$CHANGELOG_FILE" > "$TMP_CHANGELOG"
 mv "$TMP_CHANGELOG" "$CHANGELOG_FILE"
 git add "$CHANGELOG_FILE"
 
-
-
 git tag -a "$NEW_TAG" -m "Version $NEW_TAG"
 
 echo ""
@@ -122,5 +120,6 @@ echo ""
 
 if [ "$PUSH_CHANGES" = true ]; then
   echo "Pushing release $NEW_TAG to remote..."
+  git push
   git push --tags
 fi

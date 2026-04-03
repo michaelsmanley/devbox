@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.0.17] - 2026-04-03
+
+- 741eaac feat: switch to tag versioning
+
+
 ## [0.0.16] - 2026-03-29
 
 - c280101 feat: update environment configuration and documentation
@@ -79,6 +84,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Version is now stored in a `VERSION` file instead of `README.md`.
 
 ---
+
+## [0.0.17] - 2026-04-03
+
+- 741eaac feat: switch to tag versioning
+
 
 ## [0.0.16] - 2026-03-29
 
