@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.0.20] - 2026-04-03
+
+- cedf330 chore: streamline changelog update process in release script
+- 7f25e38 fix: improve portability of changelog entry insertion in release script
+- b8ed5f6 chore: standardize commit message format for release
+- c968691 fix: standardize commit message format for changelog updates
+
+
 ## [0.0.19] - 2026-04-03
 
 - fafe7d2 feat: automate changelog update for version 0.0.18
@@ -94,6 +102,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Version is now stored in a `VERSION` file instead of `README.md`.
 
 ---
+
+## [0.0.20] - 2026-04-03
+
+- cedf330 chore: streamline changelog update process in release script
+- 7f25e38 fix: improve portability of changelog entry insertion in release script
+- b8ed5f6 chore: standardize commit message format for release
+- c968691 fix: standardize commit message format for changelog updates
+
 
 ## [0.0.19] - 2026-04-03
 
