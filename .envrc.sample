@@ -1,1 +1,2 @@
 export GOOGLE_CLOUD_PROJECT_ID=devbox-491716
+export GOOGLE_APPLICATION_CREDENTIALS=/home/msm/.config/gcloud/keys/devbox-491716-7d9bd049fc88.json

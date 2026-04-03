@@ -1,8 +1,8 @@
-# MSM.dev/devbox
+# MSM.dev/dx
 
-Forked from [davetron5000/devbox](https://github.com/davetron5000/devbox).
+Initially forked from [davetron5000/devbox](https://github.com/davetron5000/devbox).
 
-This repo contains the bash scripts and Dockerfile templates for creating a development environment project for MSM.dev uses.
+This repo contains the scripts and templates for creating a development environment for MSM.dev projects.
 
 ## How to Use
 
