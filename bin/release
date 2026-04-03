@@ -112,7 +112,10 @@ sed -i "/---/r $TMP_CHANGELOG_ENTRY_FILE" "$CHANGELOG_FILE"
 rm "$TMP_CHANGELOG_ENTRY_FILE" # Clean up temp file
 git add "$CHANGELOG_FILE"
 git commit -m "chore: update CHANGELOG for $NEW_TAG"
-git push
+if [ "$PUSH_CHANGES" = true ]; then
+  echo "Pushing changes to remote..."
+  it push
+fi
 
 git tag -a "$NEW_TAG" -m "Version $NEW_TAG"
 
