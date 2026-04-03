@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.0.21] - 2026-04-03
+
+- 871b7b0 chore: update release script to correct changelog commit message and fix push command
+- 4ba81ae chore: update release script to conditionally push changes and improve changelog entry process
+
+
 ## [0.0.20] - 2026-04-03
 
 - cedf330 chore: streamline changelog update process in release script
@@ -102,6 +108,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Version is now stored in a `VERSION` file instead of `README.md`.
 
 ---
+
+## [0.0.21] - 2026-04-03
+
+- 871b7b0 chore: update release script to correct changelog commit message and fix push command
+- 4ba81ae chore: update release script to conditionally push changes and improve changelog entry process
+
 
 ## [0.0.20] - 2026-04-03
 
